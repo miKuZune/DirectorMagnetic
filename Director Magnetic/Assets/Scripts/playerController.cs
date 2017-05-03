@@ -7,24 +7,38 @@ public class playerController : MonoBehaviour {
 	public float startMagnetSpeed;
 	public float speed = 10.0f;
 	public GameObject lastMagnet;
+
+	Vector2 mouseLook;
+	Vector2 smoothV;
+	public float sensitivity = 5.0f;
+	public float smoothing = 2.0f;
 	// Use this for initialization
+
+	public float moveSpeed;
+
+	public int playerScore;
 	void Start () {
 		Cursor.lockState = CursorLockMode.Locked;
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		float translation = Input.GetAxis("Vertical") * speed;
-		float straffe = Input.GetAxis("Horizontal") * speed;
-		translation *= Time.deltaTime;
-		straffe *= Time.deltaTime;
 		
-		transform.Translate (straffe, 0, translation);
-		
+
+	void playerMove(){
+		if (Input.GetKey ("d")) {
+			transform.Translate (new Vector3 (0, 0, moveSpeed));
+			transform.localRotation = Quaternion.AngleAxis (-90, transform.up);
+		}
+		if (Input.GetKey ("a")) {
+			transform.Translate (new Vector3 (0, 0, moveSpeed));
+			transform.localRotation = Quaternion.AngleAxis (90, transform.up);
+		}
+
+	}
+
+	void magnetism(){
 		if(Input.GetKeyDown("escape"))
 			Application.Quit();
-		
+
 		if (Input.GetMouseButton(0) && seesMagnet == true) {
 			transform.position = Vector3.MoveTowards (transform.position,seenMagentPos, 0.5f);
 		}
@@ -34,11 +48,18 @@ public class playerController : MonoBehaviour {
 			Debug.Log("Hell");
 		}
 
-		if (Input.GetKey ("e")) {
+		if (Input.GetKey ("e") && seesMagnet == true) {
 			lastMagnet.transform.position = Vector3.MoveTowards(seenMagentPos,transform.position,-0.5f);
 		}
-
-		Debug.Log (seesMagnet);
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+		
+		playerMove ();
+		magnetism ();
+		Debug.Log (playerScore);
 	}
 	
 	void OnTriggerStay(Collider coll){
@@ -46,7 +67,6 @@ public class playerController : MonoBehaviour {
 			seesMagnet = true;
 			lastMagnet = coll.gameObject;
 			seenMagentPos = coll.transform.position;
-
 		}
 	}
 	void OnTriggerExit(Collider coll){

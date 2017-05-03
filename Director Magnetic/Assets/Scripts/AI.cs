@@ -3,6 +3,8 @@ using System.Collections;
 
 public class AI : MonoBehaviour {
 
+
+	public int scoreWorth;
 	//Transform playerTransform;
 	Transform wallTransform;
 	// Use this for initialization
@@ -18,5 +20,15 @@ public class AI : MonoBehaviour {
 		//transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (playerTransform.position - transform.position), 3.0f * Time.deltaTime);
 		transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (wallTransform.position - transform.position), 3.0f * Time.deltaTime);
 		transform.position += transform.forward * 3.0f * Time.deltaTime;
+	}
+
+	void OnTriggerEnter(Collider coll){
+		if (coll.tag == "Floor") {
+			Destroy (this);
+			Debug.Log ("Destroyed");
+
+			GameObject.FindGameObjectWithTag ("Player").GetComponent<playerController> ().playerScore += scoreWorth;
+
+		}
 	}
 }
