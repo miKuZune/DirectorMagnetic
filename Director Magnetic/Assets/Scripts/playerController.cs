@@ -34,6 +34,10 @@ public class playerController : MonoBehaviour {
 			Debug.Log("Hell");
 		}
 
+		if (Input.GetKey ("e")) {
+			lastMagnet.transform.position = Vector3.MoveTowards(seenMagentPos,transform.position,-0.5f);
+		}
+
 		Debug.Log (seesMagnet);
 	}
 	
