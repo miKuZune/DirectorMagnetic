@@ -7,6 +7,9 @@ public class playerController : MonoBehaviour {
 	public float startMagnetSpeed;
 	public float speed = 10.0f;
 	public GameObject lastMagnet;
+	public float magnetCharge;
+	public float magnetChargeIncrease;
+	bool goingRight;
 
 	Vector2 mouseLook;
 	Vector2 smoothV;
@@ -14,12 +17,13 @@ public class playerController : MonoBehaviour {
 	public float smoothing = 2.0f;
 	// Use this for initialization
 
+	Rigidbody magnetRB;
+
 	public float moveSpeed;
 
 	public int playerScore;
 	void Start () {
 		Cursor.lockState = CursorLockMode.Locked;
-
 	}
 		
 
@@ -27,10 +31,12 @@ public class playerController : MonoBehaviour {
 		if (Input.GetKey ("d")) {
 			transform.Translate (new Vector3 (0, 0, moveSpeed));
 			transform.localRotation = Quaternion.AngleAxis (-90, transform.up);
+			goingRight = true;
 		}
 		if (Input.GetKey ("a")) {
 			transform.Translate (new Vector3 (0, 0, moveSpeed));
 			transform.localRotation = Quaternion.AngleAxis (90, transform.up);
+			goingRight = false;
 		}
 
 	}
@@ -43,23 +49,32 @@ public class playerController : MonoBehaviour {
 			transform.position = Vector3.MoveTowards (transform.position,seenMagentPos, 0.5f);
 		}
 
-		if (Input.GetMouseButton(1) && seesMagnet == true) {
+		if (Input.GetKey("e") && seesMagnet == true) {
 			lastMagnet.transform.position = Vector3.MoveTowards(seenMagentPos,transform.position,0.5f);
-			Debug.Log("Hell");
+			magnetCharge += magnetChargeIncrease;
 		}
 
-		if (Input.GetKey ("e") && seesMagnet == true) {
-			lastMagnet.transform.position = Vector3.MoveTowards(seenMagentPos,transform.position,-0.5f);
+		if (Input.GetKeyUp("e") && seesMagnet == true) {
+			float tempVal = 0;
+			if (magnetCharge > 20.0f) {
+				if (goingRight) {
+					tempVal = 50.0f;
+				} else {
+					tempVal = -50.0f;
+				}
+			} else {
+				tempVal = 0f;
+			}
+			magnetRB.velocity = new Vector3(-tempVal,magnetCharge,0);
+			Debug.Log (magnetCharge);
+			magnetCharge = 0.0f;
 		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-		
 		playerMove ();
 		magnetism ();
-		Debug.Log (playerScore);
 	}
 	
 	void OnTriggerStay(Collider coll){
@@ -67,6 +82,7 @@ public class playerController : MonoBehaviour {
 			seesMagnet = true;
 			lastMagnet = coll.gameObject;
 			seenMagentPos = coll.transform.position;
+			magnetRB = coll.gameObject.GetComponent<Rigidbody> ();
 		}
 	}
 	void OnTriggerExit(Collider coll){
