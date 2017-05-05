@@ -46,8 +46,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AI.cs" />
-     <Compile Include="Assets\Scripts\Aiming.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\MouseAiming.cs" />
      <Compile Include="Assets\Scripts\SpawningScript.cs" />
      <Compile Include="Assets\Scripts\playerController.cs" />
      <Compile Include="Assets\Scripts\posLock.cs" />

@@ -23,7 +23,7 @@ public class playerController : MonoBehaviour {
 
 	public int playerScore;
 	void Start () {
-		Cursor.lockState = CursorLockMode.Locked;
+		//Cursor.lockState = CursorLockMode.Locked;
 	}
 		
 
@@ -98,7 +98,7 @@ public class playerController : MonoBehaviour {
 			lastMagnet.GetComponent<AI> ().beingPulled = false;
 		}
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		playerMove ();
