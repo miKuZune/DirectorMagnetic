@@ -7,6 +7,7 @@ public class AI : MonoBehaviour {
 	public int scoreWorth;
 	//Transform playerTransform;
 	Transform wallTransform;
+	public bool beingPulled = false;
 	// Use this for initialization
 	void Start () {
 
@@ -18,8 +19,11 @@ public class AI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (playerTransform.position - transform.position), 3.0f * Time.deltaTime);
-		transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (wallTransform.position - transform.position), 3.0f * Time.deltaTime);
-		transform.position += transform.forward * 3.0f * Time.deltaTime;
+
+		if (beingPulled == false) {
+			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (wallTransform.position - transform.position), 3.0f * Time.deltaTime);
+			transform.position += transform.forward * 3.0f * Time.deltaTime;
+		}
 	}
 
 	void OnTriggerEnter(Collider coll){

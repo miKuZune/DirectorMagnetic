@@ -46,11 +46,38 @@ public class playerController : MonoBehaviour {
 			Application.Quit();
 
 		if (Input.GetMouseButton(0) && seesMagnet == true) {
-			transform.position = Vector3.MoveTowards (transform.position,seenMagentPos, 0.5f);
+			float distanceFromPlayer;
+			distanceFromPlayer = transform.position.x - lastMagnet.transform.position.x;
+
+			if (distanceFromPlayer < 0) {
+				distanceFromPlayer = -distanceFromPlayer;
+			}
+
+			if (distanceFromPlayer > 1.0f) {
+				transform.position = Vector3.MoveTowards (transform.position, seenMagentPos, 0.5f);
+			} else {
+
+			}
+			Debug.Log (distanceFromPlayer);
 		}
 
 		if (Input.GetKey("e") && seesMagnet == true) {
-			lastMagnet.transform.position = Vector3.MoveTowards(seenMagentPos,transform.position,0.5f);
+			
+			float distanceFromPlayer;
+			distanceFromPlayer = transform.position.x - lastMagnet.transform.position.x;
+			lastMagnet.GetComponent<AI> ().beingPulled = true;
+			if (distanceFromPlayer < 0) {
+				distanceFromPlayer = -distanceFromPlayer;
+			}
+
+			if (distanceFromPlayer > 3.5f) {
+				lastMagnet.transform.position = Vector3.MoveTowards (seenMagentPos, transform.position, 0.5f);
+
+				Debug.Log (distanceFromPlayer);
+			} else {
+				lastMagnet.transform.position = seenMagentPos;
+			}
+
 			magnetCharge += magnetChargeIncrease;
 		}
 
@@ -68,6 +95,7 @@ public class playerController : MonoBehaviour {
 			magnetRB.velocity = new Vector3(-tempVal,magnetCharge,0);
 			Debug.Log (magnetCharge);
 			magnetCharge = 0.0f;
+			lastMagnet.GetComponent<AI> ().beingPulled = false;
 		}
 	}
 	
@@ -87,5 +115,6 @@ public class playerController : MonoBehaviour {
 	}
 	void OnTriggerExit(Collider coll){
 		seesMagnet = false;
+		lastMagnet.GetComponent<AI> ().beingPulled = false;
 	}
 }
