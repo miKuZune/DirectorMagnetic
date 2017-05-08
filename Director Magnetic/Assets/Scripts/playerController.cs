@@ -29,14 +29,18 @@ public class playerController : MonoBehaviour {
 
 	void playerMove(){
 		if (Input.GetKey ("d")) {
-			transform.Translate (new Vector3 (0, 0, moveSpeed));
-			transform.localRotation = Quaternion.AngleAxis (-90, transform.up);
+			transform.Translate (new Vector3 (-moveSpeed, 0, 0));
+			//transform.localRotation = Quaternion.AngleAxis (-90, transform.up);
 			goingRight = true;
 		}
 		if (Input.GetKey ("a")) {
-			transform.Translate (new Vector3 (0, 0, moveSpeed));
-			transform.localRotation = Quaternion.AngleAxis (90, transform.up);
+			transform.Translate (new Vector3 (moveSpeed, 0, 0));
+			//transform.localRotation = Quaternion.AngleAxis (90, transform.up);
 			goingRight = false;
+		}
+
+		if (Input.GetKeyDown ("space")) {
+			gameObject.GetComponent<Rigidbody> ().velocity = new Vector3(gameObject.GetComponent<Rigidbody> ().velocity.x,10f,0);
 		}
 
 	}
