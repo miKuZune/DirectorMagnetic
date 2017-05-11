@@ -5,16 +5,10 @@ public class playerController : MonoBehaviour {
 	bool seesMagnet = false;
 	Vector3 seenMagentPos = new Vector3(0,0,0);
 	public float startMagnetSpeed;
-	public float speed = 10.0f;
 	public GameObject lastMagnet;
 	public float magnetCharge;
 	public float magnetChargeIncrease;
 	bool goingRight;
-
-	Vector2 mouseLook;
-	Vector2 smoothV;
-	public float sensitivity = 5.0f;
-	public float smoothing = 2.0f;
 	// Use this for initialization
 
 	Rigidbody magnetRB;
@@ -22,9 +16,7 @@ public class playerController : MonoBehaviour {
 	public float moveSpeed;
 
 	public int playerScore;
-	void Start () {
-		//Cursor.lockState = CursorLockMode.Locked;
-	}
+	void Start () {	}
 
 	public void LoadScene(int level)
 	{
@@ -38,7 +30,7 @@ public class playerController : MonoBehaviour {
 		if (Input.GetKey(KeyCode.D)) {
 			move = moveSpeed;
 			goingRight = true;
-		}else if (Input.GetKey ("a")) {
+		}else if (Input.GetKey(KeyCode.A)) {
 			move = -moveSpeed;
 			goingRight = false;
 		} else {
@@ -49,8 +41,6 @@ public class playerController : MonoBehaviour {
 	}
 
 	void magnetism(){
-		
-
 		if (Input.GetMouseButton(0) && seesMagnet == true) {
 			float distanceFromPlayer;
 			distanceFromPlayer = transform.position.x - lastMagnet.transform.position.x;
@@ -84,17 +74,18 @@ public class playerController : MonoBehaviour {
 
 			if (lastMagnet.GetComponent<AI> ().heldStill == true) {
 				Vector3 tempPos = GameObject.FindGameObjectWithTag ("MagnetHolder").transform.position;
-				//lastMagnet.transform.rotation = GameObject.FindGameObjectWithTag ("MagnetRotate").transform.rotation;
 				lastMagnet.transform.position = tempPos;
 			}
 
 			magnetCharge += magnetChargeIncrease;
+            
 		}
 
 		if (Input.GetKeyUp("e") && seesMagnet == true) {
 			float tempVal = 0;
 			if (magnetCharge > 20.0f) {
-				if (goingRight) {
+                lastMagnet.GetComponent<CapsuleCollider>().enabled = false;
+                if (goingRight) {
 					tempVal = 50.0f;
 				} else {
 					tempVal = -50.0f;
@@ -102,18 +93,13 @@ public class playerController : MonoBehaviour {
 			} else {
 				tempVal = 0f;
 			}
-			lastMagnet.GetComponent<CapsuleCollider> ().enabled = false;
 			magnetRB.velocity = new Vector3(-tempVal,magnetCharge,0);
 			magnetCharge = 0.0f;
 			lastMagnet.GetComponent<AI> ().beingPulled = false;
 		}
 	}
 
-	// Update is called once per frame
 	void Update () {
-		//if(Input.GetKeyDown("escape"))
-		//	Application.Quit();
-
 		if(Input.GetKeyDown("p")){
 			LoadScene(0);
 		}

@@ -9,6 +9,7 @@ public class AI : MonoBehaviour {
 	Transform wallTransform;
 	public bool beingPulled = false;
 	public bool heldStill = false;
+    public object scorer;
 	// Use this for initialization
 	void Start () {
 
@@ -24,29 +25,27 @@ public class AI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (playerTransform.position - transform.position), 3.0f * Time.deltaTime);
-
 		if (beingPulled == false) {
 			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (wallTransform.position - transform.position), 3.0f * Time.deltaTime);
 			transform.position += transform.forward * 3.0f * Time.deltaTime;
-		}
+        }else{
+            setRotation();
+        }
 
-		setRotation ();
+		
 
 		if (transform.position.y < -20) {
 			Debug.Log ("byebye");
+            GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreScript>().playerScore += scoreWorth;
+            Destroy (gameObject);
 
-			GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<ScoreScript> ().playerScore += scoreWorth;
-			Destroy (gameObject);
-
-		}
-		Vector3 tempPos = Camera.main.WorldToScreenPoint(transform.position);
-
+        }
+        Vector3 tempPos = Camera.main.WorldToScreenPoint(transform.position);
 		if (tempPos.x > Screen.width) {
-			GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<ScoreScript> ().playerScore += scoreWorth;
+			GameObject.FindGameObjectWithTag ("Score").GetComponent<ScoreScript> ().playerScore += scoreWorth;
 			Destroy (gameObject);
 		} else if (tempPos.x < 0) {
-			GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<ScoreScript> ().playerScore += scoreWorth;
+			GameObject.FindGameObjectWithTag ("Score").GetComponent<ScoreScript> ().playerScore += scoreWorth;
 			Destroy (gameObject);
 		}
 	}
