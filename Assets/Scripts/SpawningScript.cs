@@ -14,10 +14,10 @@ public class SpawningScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		counter = counter + Time.deltaTime;
-		if (counter == 5) {
+		if (counter == 1.5) {
 			Instantiate (enemy, spawnPos, Quaternion.Euler (90, 180, 0));
 		}
-        else if (counter > 10)
+        else if (counter > 3)
         {
             Instantiate(enemy, spawnPos2, Quaternion.Euler(90, 180, 0));
             counter = 0;
