@@ -2,30 +2,30 @@ Initialize engine version: 5.4.1f1 (649f48bbbf0f)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
-    Vendor:   NVIDIA
-    VRAM:     3072 MB
+    Renderer: AMD Radeon(TM) R9 270 (ID=0x6811)
+    Vendor:   ATI
+    VRAM:     2030 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.468 seconds
-Platform assembly: C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Max\Desktop\GitHub\DirectorMagnetic\build_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+Platform assembly: D:\MaxF\DirectorMagnetic\build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\MaxF\DirectorMagnetic\build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\MaxF\DirectorMagnetic\build_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\MaxF\DirectorMagnetic\build_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\MaxF\DirectorMagnetic\build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\MaxF\DirectorMagnetic\build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\MaxF\DirectorMagnetic\build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\MaxF\DirectorMagnetic\build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\MaxF\DirectorMagnetic\build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\MaxF\DirectorMagnetic\build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\MaxF\DirectorMagnetic\build_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\MaxF\DirectorMagnetic\build_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.055 seconds
+Platform assembly: D:\MaxF\DirectorMagnetic\build_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\MaxF\DirectorMagnetic\build_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.158479 ms
+UnloadTime: 0.565641 ms
 NullReferenceException: Object reference not set to an instance of an object
   at UImanager.Start () [0x00000] in <filename unknown>:0 
  
@@ -36,8 +36,9 @@ NullReferenceException: Object reference not set to an instance of an object
  
 (Filename:  Line: -1)
 
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 3920 -> priority: 1 
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2dc8 -> priority: 1 
+  Thread -> id: 2e54 -> priority: 1 
 The referenced script on this Behaviour (Game Object 'Camera') is missing!
  
 (Filename:  Line: 1656)
@@ -51,10 +52,10 @@ The referenced script on this Behaviour (Game Object 'UIstaff') is missing!
 (Filename:  Line: 1656)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.596609 ms
+UnloadTime: 3.805824 ms
 
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 577.
-Total: 0.426157 ms (FindLiveObjects: 0.059068 ms CreateObjectMapping: 0.045151 ms MarkObjects: 0.304309 ms  DeleteObjects: 0.016699 ms)
+Total: 0.257446 ms (FindLiveObjects: 0.026799 ms CreateObjectMapping: 0.014540 ms MarkObjects: 0.206983 ms  DeleteObjects: 0.008267 ms)
 
 NullReferenceException: Object reference not set to an instance of an object
   at UImanager.Start () [0x00000] in <filename unknown>:0 
@@ -136,62 +137,6 @@ NullReferenceException: Object reference not set to an instance of an object
  
 (Filename:  Line: -1)
 
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
 NullReferenceException: Object reference not set to an instance of an object
   at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
  
@@ -239,279 +184,6 @@ NullReferenceException
 NullReferenceException
   at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
   at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
   at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
@@ -615,30 +287,6 @@ NullReferenceException
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
 NullReferenceException
   at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
   at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
@@ -686,392 +334,192 @@ NullReferenceException: Object reference not set to an instance of an object
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
   at characterController.magnetism () [0x00000] in <filename unknown>:0 
   at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
 NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
-  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
   at characterController.magnetism () [0x00000] in <filename unknown>:0 
   at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
   at characterController.magnetism () [0x00000] in <filename unknown>:0 
   at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
   at characterController.magnetism () [0x00000] in <filename unknown>:0 
   at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
@@ -1124,52 +572,9 @@ NullReferenceException
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
+  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
   at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
@@ -1181,96 +586,229 @@ NullReferenceException
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
+  at UnityEngine.GameObject.GetComponent[AI] () [0x00000] in <filename unknown>:0 
   at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at characterController.OnTriggerExit (UnityEngine.Collider coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody:INTERNAL_set_velocity (UnityEngine.Vector3&)
+  at UnityEngine.Rigidbody.set_velocity (Vector3 value) [0x00000] in <filename unknown>:0 
+  at characterController.magnetism () [0x00000] in <filename unknown>:0 
+  at characterController.Update () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.339704 ms
+UnloadTime: 0.877258 ms
 
 Unloading 99 unused Assets to reduce memory usage. Loaded Objects now: 328.
-Total: 0.695211 ms (FindLiveObjects: 0.020720 ms CreateObjectMapping: 0.055975 ms MarkObjects: 0.326885 ms  DeleteObjects: 0.290702 ms)
+Total: 0.447324 ms (FindLiveObjects: 0.019101 ms CreateObjectMapping: 0.012544 ms MarkObjects: 0.198145 ms  DeleteObjects: 0.217247 ms)
 
 NullReferenceException: Object reference not set to an instance of an object
   at UImanager.Start () [0x00000] in <filename unknown>:0 

@@ -81,10 +81,11 @@
     <Compile Include="Assets\Scripts\AI.cs" />
     <Compile Include="Assets\Scripts\ApplicationQuit.cs" />
     <Compile Include="Assets\Scripts\LoadOnClick.cs" />
-    <Compile Include="Assets\Scripts\MouseAiming.cs" />
+    <Compile Include="Assets\Scripts\RotaterScript.cs" />
     <Compile Include="Assets\Scripts\ScoreScript.cs" />
     <Compile Include="Assets\Scripts\SpawningScript.cs" />
     <Compile Include="Assets\Scripts\UImanager.cs" />
+    <Compile Include="Assets\Scripts\characterController.cs" />
     <Compile Include="Assets\Scripts\playerController.cs" />
   </ItemGroup>
   <ItemGroup>
