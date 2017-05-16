@@ -49,7 +49,7 @@ public class characterController : MonoBehaviour {
 			}
 			
 			magnetCharge += magnetChargeIncrease;
-			
+			Debug.Log (magnetCharge);
 		}
 		
 		if (Input.GetKeyUp("e") && seesMagnet == true) {
@@ -62,11 +62,12 @@ public class characterController : MonoBehaviour {
 					tempVal = -50.0f;
 				}
 			} else {
-				tempVal = 0f;
+				tempVal = 50f;
 			}
 			magnetRB.velocity = new Vector3(-tempVal,magnetCharge,0);
 			magnetCharge = 0.0f;
 			lastMagnet.GetComponent<AI> ().beingPulled = false;
+			lastMagnet.GetComponent<AI> ().heldStill = false;
 		}
 	}
 	

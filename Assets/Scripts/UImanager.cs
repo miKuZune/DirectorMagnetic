@@ -3,19 +3,21 @@ using System.Collections;
 
 public class UImanager : MonoBehaviour {
 
-	public Transform canvas;
+	public Transform PauseScreen;
+	public Transform helpScreen;
 
 	void Start(){
-		canvas.gameObject.SetActive (false);
+		PauseScreen.gameObject.SetActive (false);
+		helpScreen.gameObject.SetActive (false);
 	}
 	void Update(){
 		if (Input.GetKeyDown (KeyCode.P)) {
-			if(canvas.gameObject.activeInHierarchy == false){
+			if(PauseScreen.gameObject.activeInHierarchy == false){
 				Time.timeScale=0;
-				canvas.gameObject.SetActive(true);
+				PauseScreen.gameObject.SetActive(true);
 			}else{
 				Time.timeScale = 1;
-				canvas.gameObject.SetActive(false);
+				PauseScreen.gameObject.SetActive(false);
 			}
 		}
 	}
@@ -34,7 +36,20 @@ public class UImanager : MonoBehaviour {
 	}
 
 	public void ResumeGame(){
-		canvas.gameObject.SetActive (false);
+		PauseScreen.gameObject.SetActive (false);
 		Time.timeScale = 1;
+	}
+
+	public void HelpScreen(){
+		if (helpScreen.gameObject.activeInHierarchy == false) {
+			helpScreen.gameObject.SetActive (true);
+			PauseScreen.gameObject.SetActive(false);
+
+
+		} else {
+			helpScreen.gameObject.SetActive (false);
+			PauseScreen.gameObject.SetActive(true);
+
+		}
 	}
 }

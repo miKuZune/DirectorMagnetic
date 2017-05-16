@@ -5,21 +5,25 @@ public class AI : MonoBehaviour {
 
 
 	public int scoreWorth;
-	//Transform playerTransform;
+	GameObject player;
 	Transform wallTransform;
 	public bool beingPulled = false;
 	public bool heldStill = false;
     public object scorer;
 	// Use this for initialization
 	void Start () {
-
-		//playerTransform = GameObject.FindGameObjectWithTag ("Player").transform;
+		player = GameObject.FindGameObjectWithTag ("Player");
 		wallTransform = GameObject.FindGameObjectWithTag ("TrainWall").transform;
 
 	}
 
 	void setRotation(){
 		transform.rotation = Quaternion.Euler(0, 0, 0);
+	}
+	void goToPlayer(){
+		if (beingPulled == true && heldStill == false) {
+			transform.position = Vector3.MoveTowards (transform.position,player.transform.position,0.5f);
+		}
 	}
 		
 	
@@ -29,6 +33,7 @@ public class AI : MonoBehaviour {
 			transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.LookRotation (wallTransform.position - transform.position), 3.0f * Time.deltaTime);
 			transform.position += transform.forward * 3.0f * Time.deltaTime;
         }else{
+			goToPlayer ();
             setRotation();
         }
 
